@@ -1,0 +1,323 @@
+body, div, h1, h2, p, a, button, span{
+    font-family: 'Sora', sans-serif;
+}
+
+
+.header-area, .hero-banner{
+    background-color: #16131E;
+}
+.logo-area{
+    padding: 20px 0px;
+}
+
+.header-social-icon-area li a{
+    padding: 26px 10px;
+}
+.contact-area li a:last-child{
+    padding-right: 0px;
+}
+.contact-area .btn-secondary{
+    text-transform: uppercase;
+    background-color: #FFD300;
+    color: #16131E;
+    line-height: 26px;
+}
+.menu-line-area{
+    
+}
+.menu-bottom-line{
+    border: 1px solid #FFD300;
+    margin-top: 0px;
+   
+    
+}
+.hero-banner{}
+.hero-text-area .card-title{
+    font-size: 72px;
+}
+.hero-text-area .hello-text{
+    
+    font-size: 24px;
+    text-align: left;
+    display: block;
+}
+.hero-text-area .card-text{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    line-height: 150%;
+}
+.gradient-text{
+    background: radial-gradient(26.15% 602.07% at 26.15% 50%, #E8C232 0%, #E87F0E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.text-orange{
+    color: #FFD300;
+}
+.hero-button-area a{
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.hero-button-area .text-black{
+    background: #FFD300;
+}
+.hero-banner-area{
+    position: relative;
+}
+.hero-icon{
+    position: absolute;
+}
+.dimond-hero-left{
+    left: 0px;
+    top: 100px;
+}
+.ps-hero-right{
+    right: 0px;
+    top: 140px;
+}
+.figma-hero-left{
+    left: 160px;
+    bottom: 30px;
+}
+.xd-hero-right{
+    right: 160px;
+    bottom: 80px;
+}
+service-name-area{
+    position: relative;
+    height: 80px;
+}
+.service-name-list .carousel-inner{
+    opacity: 0.2;
+
+}
+.service-name-list .carousel-item{
+    text-align: center;
+    
+}
+.service-name-list span{
+    font-family: 'Outfit', sans-serif;
+    font-size: 60px;
+    line-height: 80px;
+    color: #FFFFFF;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    padding: 5px 15px;
+    text-transform: capitalize;
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: inherit;
+}
+.all-projects .card{
+    background: transparent;
+}
+.all-projects .card img{
+    border-radius: 6px;
+}
+.all-projects .card-title{
+    color: #FDFDFF;
+    font-size: 18px;
+    line-height: 150%;
+}
+.all-projects .card-text{
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0.7;
+}
+.project-button{}
+.project-button a{
+    background: transparent;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    border: 0px;
+}
+.project-button a:hover{
+    color: #FFD300;
+    background: transparent;
+    border: 0px;
+}
+.all-projects .card-img-overlay{
+    visibility: hidden;
+    background: #16131E;
+    opacity: 0.7;
+}
+.all-projects .card:hover .card-img-overlay{
+    visibility: visible;
+    color: #FFD300;
+}
+.project-status-card{
+    min-height: 60px;
+}
+.project-status-title{
+    font-size: 48px;
+    line-height: 150%;
+    margin: 0px;
+    padding: 0px;
+}
+.project-status-text{
+    font-size: 16px;
+    line-height: 150%;
+    opacity: 0.8;
+    margin: 0px;
+    padding: 0px;
+}
+.experience-area{
+    background: #FFD300;
+}
+.work-experience h2{
+    font-size: 72px;
+    color: #16131E;
+    opacity: 0.9;
+}
+.work-and-education .card{
+    background: transparent;
+    border: 0px;
+}
+.education-title-area{}
+.education-title-area .card-title{
+    font-size: 24px;
+    line-height: 150%;
+}
+.education-title-area .card-title:after{}
+.education-title-area .progress{
+    width: 125px;
+    height: 2px;
+    background: #353535;
+}
+.education-title-area .progress-bar{
+    width: 20%;
+    background: #FF0000;
+    
+}
+.educational-qualification{
+    border: 2px solid;
+    padding: 20px;
+    border-top: 0px;
+    border-right: 0px;
+}
+.passing-year{
+    position: absolute;
+    background: #222222;
+    left: 0px;
+    color: #D5D5D5;
+    font-size: 12px;
+    line-height: 23px;
+    padding: 2px 12px;
+    border-radius: 30px;
+}
+.university-name{
+    font-size: 12px;
+    line-height: 150%;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+.study-subject{
+    font-size: 18px;
+    line-height: 18px;
+}
+.education-details{
+    font-size: 14px;
+    line-height: 150%;
+}
+.feedback-area{
+    position: relative;
+}
+.client-feedback-h2{}
+.feeback-slider-area .card{
+    background: transparent;
+    color: #FDFDFF;
+    color: rgba(255,255,255,0.7);
+}
+.feeback-slider-area .card-title{
+    font-size: 24px;
+    line-height: 150%;
+    color: #FDFDFF;
+}
+.feeback-slider-area .card-subtitle{
+    
+}
+.feeback-slider-area .review-star-fill{
+    font-size: 20px;
+    color: #FFC107;
+}
+.client-image-area{}
+.main-client-image{
+    z-index: 888;
+    position: relative;
+}
+.client-image-bg{
+    position: absolute;
+    right: 0px;
+    bottom: -40px;
+    z-index: 000;
+}
+.speak-business-area{
+    color: #FFFFFF;
+}
+.speak-business-area .h1{
+    font-size: 72px;
+    line-height: 150%;
+}
+.speak-business-area .text-start{
+    opacity: 0.7;
+}
+.footer-area{
+    background: #16131E;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 150%;
+}
+.footer-area p{
+    margin: 0px;
+}
+.follow-me{
+    font-size: 20px;
+    line-height: 30px;
+}
+.footer-area .nav .nav-item{
+    
+}
+.footer-area .nav .nav-link{
+    padding: 5px;
+}
+
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
