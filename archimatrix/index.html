@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" class="is-loading">
+<head>
+  <script>document.documentElement.classList.add("js")</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Archimatrix — Architecture &amp; Interiors, Kuala Lumpur</title>
+  <meta name="description" content="Since 2000, Archimatrix has shaped homes, workplaces and neighbourhoods across Malaysia — architecture, masterplanning, landscape and hospitality.">
+  <meta name="theme-color" content="#080707">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero.jpg">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- SVG sprite: icons exported from Figma -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M6.24264 17.2426L17.5563 5.92893M17.5563 14.4142V5.92893H9.07107" stroke="currentColor" stroke-width="1.5" fill="none"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M13.0002 2L13.0002 18.5858L19.0002 12.5858L20.4144 14L12.0002 22.4142L3.58594 14L5.00015 12.5858L11.0002 18.5858L11.0002 2H13.0002Z" fill="currentColor"/></symbol>
+    <symbol id="i-dots" viewBox="0 0 22 22"><ellipse cx="10.6251" cy="10.6252" rx="9.58333" ry="9.58333" transform="rotate(-90 10.6251 10.6252)" stroke="currentColor" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.42 4.58 0.42 4.58" fill="none"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 11 11"><path d="M5.5 0V11M0 5.5H11" stroke="currentColor" fill="none"/></symbol>
+  </svg>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="loader" data-loader aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__mark" data-loader-mark></div>
+      <div class="loader__meta">
+        <span>Architecture · Interiors · Since 2000</span>
+        <span class="loader__count"><span data-loader-count>0</span>%</span>
+      </div>
+      <div class="loader__bar"><span data-loader-bar></span></div>
+    </div>
+  </div>
+
+  <!-- ============ CURSOR ============ -->
+  <div class="cursor" data-cursor aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"><span class="cursor__label" data-cursor-label></span></div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" data-header>
+    <a href="#top" class="header__logo" data-scroll-to aria-label="Archimatrix — home">
+      <img src="assets/img/logo.png" width="54" height="48" alt="Archimatrix">
+      <span class="header__logo-fallback" aria-hidden="true">A</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#studio" class="nav__link" data-scroll-to><svg class="nav__plus"><use href="#i-plus"/></svg><span class="roll"><span class="roll__in" data-text="Studio">Studio</span></span></a>
+      <a href="#projects" class="nav__link" data-scroll-to><svg class="nav__plus"><use href="#i-plus"/></svg><span class="roll"><span class="roll__in" data-text="Projects">Projects</span></span></a>
+      <a href="#expertise" class="nav__link" data-scroll-to><svg class="nav__plus"><use href="#i-plus"/></svg><span class="roll"><span class="roll__in" data-text="Clients">Clients</span></span></a>
+      <a href="#sketch" class="nav__link" data-scroll-to><svg class="nav__plus"><use href="#i-plus"/></svg><span class="roll"><span class="roll__in" data-text="Awards">Awards</span></span></a>
+      <a href="#contact" class="nav__link" data-scroll-to><svg class="nav__plus"><use href="#i-plus"/></svg><span class="roll"><span class="roll__in" data-text="Contact">Contact</span></span></a>
+    </nav>
+    <button class="burger" data-burger aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile / overlay menu -->
+  <div class="menu" id="menu" data-menu aria-hidden="true">
+    <nav class="menu__nav" aria-label="Mobile">
+      <a href="#top" data-scroll-to><span>Home</span></a>
+      <a href="#studio" data-scroll-to><span>Studio</span></a>
+      <a href="#projects" data-scroll-to><span>Projects</span></a>
+      <a href="#expertise" data-scroll-to><span>Expertise</span></a>
+      <a href="#contact" data-scroll-to><span>Contact</span></a>
+    </nav>
+    <div class="menu__foot">
+      <a href="mailto:general@archimatrix.com.my">general@archimatrix.com.my</a>
+      <a href="tel:+60379843121">+603 7984 3121</a>
+    </div>
+  </div>
+
+  <div class="page" data-page>
+  <main id="top">
+
+    <!-- ============ HERO SLIDESHOW ============ -->
+    <section class="hero" data-hero aria-roledescription="carousel" aria-label="Featured projects">
+      <div class="hero__slides">
+        <figure class="hero__slide is-active" data-slide data-title="Commercial Residential Supervision" data-name="TRION" data-loc="Jalan Sungai Besi, Kuala Lumpur">
+          <img src="assets/img/hero.jpg" alt="TRION drop-off porte-cochère at dusk, Jalan Sungai Besi" fetchpriority="high">
+        </figure>
+        <figure class="hero__slide" data-slide data-title="Living Above The Canopy" data-name="The Airie" data-loc="Jalan Sungai Besi, Kuala Lumpur">
+          <img src="assets/img/project-airie.jpg" alt="The Airie infinity pool and towers at twilight" loading="lazy">
+        </figure>
+        <figure class="hero__slide" data-slide data-title="Homes Shaped By Light" data-name="Panorama Residences" data-loc="Petaling Jaya, Selangor">
+          <img src="assets/img/project-panorama.jpg" alt="Panorama Residences living room with floor-to-ceiling glazing" loading="lazy">
+        </figure>
+      </div>
+      <div class="hero__overlay"></div>
+
+      <h1 class="hero__title" data-hero-title>Commercial Residential Supervision</h1>
+
+      <div class="hero__caption" data-hero-caption>
+        <p class="hero__name" data-hero-name>TRION</p>
+        <p class="hero__loc" data-hero-loc>Jalan Sungai Besi, Kuala Lumpur</p>
+      </div>
+
+      <div class="hero__pager" data-hero-pager>
+        <span class="hero__index"><span data-hero-index>01</span> / <span data-hero-total>03</span></span>
+        <div class="hero__dots" data-hero-dots></div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true"><span>Scroll</span><i></i></div>
+    </section>
+
+    <!-- ============ INTRO / THE STUDIO ============ -->
+    <section class="intro" id="studio" data-theme="dark">
+      <span class="intro__divider" data-draw-y aria-hidden="true"></span>
+
+      <div class="intro__eyebrow">
+        <span class="line" data-draw-x></span>
+        <p class="eyebrow" data-fade>About</p>
+      </div>
+
+      <div class="intro__media intro__media--main" data-reveal-img>
+        <div class="parallax" data-parallax="-12"><img src="assets/img/intro-main.jpg" alt="Double-height residential lobby with ring pendants and backlit stone wall" loading="lazy"></div>
+      </div>
+
+      <h2 class="intro__title" data-split-chars>The Studio</h2>
+
+      <p class="intro__statement" data-scrub-words>We create interiors and architecture that balance form, function, and emotion. Guided by light, material, and proportion, our work is dedicated to shaping timeless spaces that feel both purposeful and inspiring.</p>
+
+      <div class="intro__body">
+        <p data-split-lines>Since 2000, Archimatrix has shaped homes, workplaces and neighbourhoods across Malaysia - architecture unbound by any single style, type or scale, and focused on making the most of time, space and resources.</p>
+        <a href="#expertise" class="link" data-scroll-to data-fade><span>About Archimatrix</span><svg><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <img class="intro__cross" src="assets/svg/crosshair.svg" alt="" aria-hidden="true" data-spin>
+
+      <div class="intro__media intro__media--small" data-reveal-img="left">
+        <div class="parallax" data-parallax="10"><img src="assets/img/intro-small.jpg" alt="Staggered balconies of a residential tower against blue sky" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS (stacked panels) ============ -->
+    <section class="projects" id="projects" aria-label="Selected projects">
+      <article class="project" data-project data-cursor-text="View">
+        <div class="project__media"><img src="assets/img/project-airie.jpg" alt="The Airie — infinity pool deck and residential towers" loading="lazy"></div>
+        <div class="project__overlay"></div>
+        <div class="project__info">
+          <span class="project__no">01 / 03</span>
+          <h3 class="project__title" data-split-lines>The Airie</h3>
+          <p class="project__loc">Jalan Sungai Besi, Kuala Lumpur</p>
+        </div>
+      </article>
+      <article class="project" data-project data-cursor-text="View">
+        <div class="project__media"><img src="assets/img/project-panorama.jpg" alt="Panorama Residences — open-plan living with skyline views" loading="lazy"></div>
+        <div class="project__overlay"></div>
+        <div class="project__info">
+          <span class="project__no">02 / 03</span>
+          <h3 class="project__title" data-split-lines>Panorama Residences</h3>
+          <p class="project__loc">Petaling Jaya, Selangor</p>
+        </div>
+      </article>
+      <article class="project" data-project data-cursor-text="View">
+        <div class="project__media"><img src="assets/img/project-valley.jpg" alt="The Valley Residences — landscaped podium garden with pergola" loading="lazy"></div>
+        <div class="project__overlay"></div>
+        <div class="project__info">
+          <span class="project__no">03 / 03</span>
+          <h3 class="project__title" data-split-lines>The Valley Residences</h3>
+          <p class="project__loc">Petaling Jaya, Selangor</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ SKETCH → REALITY ============ -->
+    <section class="sketch" id="sketch" data-theme="light">
+      <div class="sketch__film" data-sketch data-cursor-text="Reveal">
+        <div class="sketch__stage" data-sketch-stage>
+          <div class="sketch__layer sketch__layer--guides"><img src="assets/img/sketch-guides.png" alt="" loading="lazy"></div>
+          <div class="sketch__layer sketch__layer--tone"><img src="assets/img/sketch-tone.png" alt="" loading="lazy"></div>
+          <div class="sketch__layer sketch__layer--structure"><img src="assets/img/sketch-structure.png" alt="Architectural sketch of the CloudTree Residence arrival canopy" loading="lazy"></div>
+          <div class="sketch__layer sketch__layer--detail"><img src="assets/img/sketch-detail.png" alt="" loading="lazy"></div>
+          <div class="sketch__layer sketch__layer--planting"><img src="assets/img/sketch-planting.png" alt="" loading="lazy"></div>
+          <div class="sketch__layer sketch__layer--shade"><img src="assets/img/sketch-shade.png" alt="" loading="lazy"></div>
+          <div class="sketch__photo" data-sketch-photo><img src="assets/img/sketch-photo.jpg" alt="CloudTree Residence arrival canopy as built" loading="lazy" onerror="this.onerror=null;this.src='assets/img/cloudtree.jpg'"></div>
+        </div>
+        <span class="sketch__fade sketch__fade--r"></span>
+        <span class="sketch__fade sketch__fade--l"></span>
+        <span class="sketch__fade sketch__fade--b"></span>
+        <span class="sketch__fade sketch__fade--t"></span>
+      </div>
+
+      <div class="sketch__copy">
+        <h2 class="h-display" data-split-lines>From Sketch<br>To Reality.</h2>
+        <div class="sketch__text">
+          <p data-split-lines>Every Archimatrix building begins as a line on paper — a careful reading of site, climate and the people who will live there. Hover over the drawing to see CloudTree Residence as it stands today in Seri Kembangan, Selangor.</p>
+          <a href="#cloudtree" class="link link--dark" data-scroll-to data-fade><span>Learn More</span><svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+
+      <p class="sketch__credit" data-fade>SKETCH &nbsp;·&nbsp; CLOUDTREE RESIDENCE, SERI KEMBANGAN, SELANGOR</p>
+    </section>
+
+    <!-- ============ CLOUDTREE / DISCIPLINES ============ -->
+    <section class="cloudtree" id="cloudtree" data-cloudtree>
+      <div class="cloudtree__media"><img src="assets/img/cloudtree.jpg" alt="CloudTree Residence pool deck and sculptural pergola" loading="lazy"></div>
+      <div class="cloudtree__overlay"></div>
+      <p class="cloudtree__word cloudtree__word--1" data-word="-1">Commercial</p>
+      <p class="cloudtree__word cloudtree__word--2" data-word="1">Residential</p>
+      <p class="cloudtree__word cloudtree__word--3" data-word="-1">Supervision</p>
+      <div class="cloudtree__caption">
+        <p class="cloudtree__name" data-split-lines>CloudTree Residence</p>
+        <p class="cloudtree__loc" data-fade>Petaling Jaya, Selangor</p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERTISE ACCORDION ============ -->
+    <section class="expertise" id="expertise" data-theme="light">
+      <img class="expertise__deco" src="assets/svg/expertise-deco.svg" alt="" aria-hidden="true" data-deco>
+      <h2 class="expertise__title" data-split-chars>Our Expertise</h2>
+
+      <div class="acc" data-acc>
+        <div class="acc__item" data-acc-item>
+          <button class="acc__head" data-acc-head aria-expanded="false" aria-controls="acc-1" id="acc-h1">
+            <span class="acc__no">01</span>
+            <span class="acc__name">Residential high-rise</span>
+            <span class="acc__icon" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="acc-1" role="region" aria-labelledby="acc-h1" data-acc-panel>
+            <div class="acc__inner">
+              <div class="acc__copy">
+                <p>Towers that balance density with light, sky gardens and generous shared spaces — homes designed for how Malaysians really live.</p>
+                <a href="#contact" class="link link--dark" data-scroll-to><span>Let’s Talk</span><svg class="spin"><use href="#i-dots"/></svg></a>
+              </div>
+              <div class="acc__img"><img src="assets/img/expertise-1.jpg" alt="Residential high-rise with sky gardens" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+        <div class="acc__item is-open" data-acc-item>
+          <button class="acc__head" data-acc-head aria-expanded="true" aria-controls="acc-2" id="acc-h2">
+            <span class="acc__no">02</span>
+            <span class="acc__name">Masterplanning</span>
+            <span class="acc__icon" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="acc-2" role="region" aria-labelledby="acc-h2" data-acc-panel>
+            <div class="acc__inner">
+              <div class="acc__copy">
+                <p>Districts planned around topography - like CloudTree’s five blocks across four plateaus. From high-rise homes to hotels and townships, Archimatrix works across scales — always shaped by the site, the brief and the people it serves.</p>
+                <a href="#contact" class="link link--dark" data-scroll-to><span>Let’s Talk</span><svg class="spin"><use href="#i-dots"/></svg></a>
+              </div>
+              <div class="acc__img"><img src="assets/img/expertise-2.jpg" alt="Masterplan of residential blocks across terraced plateaus" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+        <div class="acc__item" data-acc-item>
+          <button class="acc__head" data-acc-head aria-expanded="false" aria-controls="acc-3" id="acc-h3">
+            <span class="acc__no">03</span>
+            <span class="acc__name">Landscape &amp; amenity</span>
+            <span class="acc__icon" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="acc-3" role="region" aria-labelledby="acc-h3" data-acc-panel>
+            <div class="acc__inner">
+              <div class="acc__copy">
+                <p>Pools, parks and podium gardens woven through every level — turning shared spaces into everyday encounters with greenery.</p>
+                <a href="#contact" class="link link--dark" data-scroll-to><span>Let’s Talk</span><svg class="spin"><use href="#i-dots"/></svg></a>
+              </div>
+              <div class="acc__img"><img src="assets/img/expertise-3.jpg" alt="Landscaped podium garden and pool amenity" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+        <div class="acc__item" data-acc-item>
+          <button class="acc__head" data-acc-head aria-expanded="false" aria-controls="acc-4" id="acc-h4">
+            <span class="acc__no">04</span>
+            <span class="acc__name">Hospitality</span>
+            <span class="acc__icon" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="acc-4" role="region" aria-labelledby="acc-h4" data-acc-panel>
+            <div class="acc__inner">
+              <div class="acc__copy">
+                <p>Hotels and interiors with a strong sense of place, designed around comfort, light and arrival.</p>
+                <a href="#contact" class="link link--dark" data-scroll-to><span>Let’s Talk</span><svg class="spin"><use href="#i-dots"/></svg></a>
+              </div>
+              <div class="acc__img"><img src="assets/img/expertise-4.jpg" alt="Hotel interior designed around light and arrival" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT CTA ============ -->
+    <section class="contact" id="contact" data-contact>
+      <div class="contact__sky" data-contact-sky><img src="assets/img/contact-side.jpg" alt="" loading="lazy"></div>
+      <div class="contact__veil"></div>
+      <div class="contact__tower" data-contact-tower><img src="assets/img/contact-bg.png" alt="Residential tower with infinity pool overlooking the city" loading="lazy"></div>
+      <div class="contact__panel">
+        <h2 class="contact__title" data-split-lines>Discuss Your Upcoming Development.</h2>
+        <div class="contact__text">
+          <p data-split-lines>Whether you are planning a residential tower, a workplace, a hotel or a new township, we would like to hear about the site and how we can help shape it.</p>
+          <a href="mailto:general@archimatrix.com.my" class="link link--bold" data-fade data-magnetic><span>Let’s Talk</span><svg class="spin"><use href="#i-dots"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  </div>
+
+  <!-- ============ FOOTER (curtain reveal) ============ -->
+  <footer class="footer" data-footer>
+    <div class="footer__texture" aria-hidden="true" data-footer-texture><img src="assets/img/footer-texture.png" alt="" loading="lazy"></div>
+
+    <div class="footer__bar footer__bar--top">
+      <a href="mailto:general@archimatrix.com.my" class="u-hover">general@archimatrix.com.my</a>
+      <div class="footer__group">
+        <a href="tel:+60379843121" class="u-hover">+603 7984 3121</a>
+        <span><a href="https://waze.com/ul?q=Danau%20Business%20Centre%20Kuala%20Lumpur" target="_blank" rel="noopener" class="u-hover">Waze</a> | <a href="https://maps.google.com/?q=Danau+Business+Centre,+Taman+Danau+Desa,+58100+Kuala+Lumpur" target="_blank" rel="noopener" class="u-hover">Google Maps</a></span>
+      </div>
+    </div>
+
+    <div class="footer__main">
+      <div class="footer__cols">
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="#top" data-scroll-to class="is-current">Home</a>
+          <a href="#studio" data-scroll-to>Studio</a>
+          <a href="#projects" data-scroll-to>Projects</a>
+          <a href="#expertise" data-scroll-to>About Us</a>
+          <a href="#contact" data-scroll-to>Contact us</a>
+        </nav>
+        <address class="footer__addr">9-1-10, Jalan 3/109F,<br>Danau Business Centre,<br>Taman Danau Desa,<br>58100 Kuala Lumpur, Malaysia.</address>
+      </div>
+      <a href="#top" class="totop" data-scroll-to data-magnetic>
+        <span>Back to top</span>
+        <span class="totop__btn"><svg><use href="#i-arrow-down"/></svg></span>
+      </a>
+    </div>
+
+    <div class="footer__mark" data-footer-mark aria-label="Archimatrix" role="img">
+      <svg viewBox="0 0 1360 153" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M625.44 2.54277C630.733 2.5237 650.956 1.08107 654.414 3.62974C660.056 7.78925 690.859 123.032 695.196 126.055C695.507 125.97 696.175 125.875 696.433 125.719C699.163 124.057 731.844 7.4507 736.121 4.21523C739.348 1.77306 759.467 1.93401 764.207 2.55529C765.913 2.7783 767.103 3.41491 768.161 4.76939C769.067 8.84948 768.696 51.1028 768.696 58.4704C768.763 81.5296 768.703 104.589 768.498 127.648C768.478 133.6 771.87 148.645 763.949 149.678C760.518 150.125 751.507 150.435 748.697 148.705C746.376 145.219 747.573 74.6569 747.566 63.0113C747.593 59.095 748.373 41.1838 746.416 39.1672C744.941 39.2979 744.32 39.123 743.474 40.4613C740.161 45.7075 737.728 58.3125 735.712 64.9204C732.3 76.1406 711.5 144.671 707.54 148.535C704.975 151.047 686.555 149.781 682.284 149.668C671.805 120.716 663.54 89.0085 653.452 59.7824C651.934 55.3844 646.541 37.727 644.728 34.7515L642.849 34.7009C641.24 36.7329 642.434 57.4428 642.446 61.5945L642.426 126.943C642.432 131.583 643.554 145.948 641.092 148.965C637.771 150.376 625.298 150.733 622.817 147.982C621.84 142.288 622.234 124.894 622.238 118.048L622.302 22.4901C622.304 18.2987 621.943 8.70373 622.476 5.17112C623.918 3.03428 623.185 3.64245 625.44 2.54277Z"/>
+        <path d="M145.307 2.46092C170.004 3.48747 196.779 -0.0116529 220.543 5.90394C257.031 15.117 256.445 67.3526 221.702 78.6482C215.923 80.5271 219.925 85.3341 221.118 88.5231C224.049 96.3532 250.966 143.83 249.401 148.92C245.95 150.536 233.41 149.8 228.938 149.684C226.574 145.516 224.3 140.53 222.197 136.164C213.707 122.367 207.113 103.262 199.339 88.8573C198.065 86.4974 194.42 82.7022 191.524 82.8982C184.574 83.3694 173.47 81.7297 167.102 83.3058C161.277 87.2458 166.823 138.452 164.073 147.228C162.812 151.253 147.2 150.188 144.255 149.114C141.362 145.839 142.502 132.428 142.514 127.292L142.538 91.9197C142.549 63.8799 142.441 35.7737 142.515 7.72975C142.524 4.41512 143.055 4.55687 145.307 2.46092ZM217.777 59.3258C223.406 53.6364 225.225 49.6628 225.29 41.5911C225.502 15.1694 184.553 20.5019 166.384 20.632C162.792 24.6442 165.175 51.6023 164.59 58.1914C164.466 59.5926 165.211 62.9696 165.904 64.3753C171.903 68.4804 211.749 66.266 217.777 59.3258Z"/>
+        <path d="M1064.84 2.50103C1090.37 3.22329 1120.36 -0.756656 1144.530 8.0052C1154.79 12.2645 1163.24 21.7527 1165.02 32.6667C1169.15 57.8283 1158.91 71.3738 1136.04 79.856C1139.98 91.2938 1168.74 142.717 1168.01 148.748C1165.49 150.423 1150.9 149.825 1147.07 149.789C1144.22 145.645 1141.8 140.338 1139.67 135.74C1135.88 128.636 1116.89 85.4193 1112.57 83.7317C1108.64 82.193 1088.32 82.0652 1084.56 83.6727C1081.13 88.3487 1083.99 136.897 1082.68 147.268C1081.99 148.307 1081.75 148.78 1080.53 149.267C1077.33 150.551 1066.08 150.469 1062.84 149.091C1062.18 148.813 1061.95 148.361 1061.7 147.715C1060.5 144.569 1060.79 6.66592 1061.57 4.90709C1062.31 3.25436 1063.28 3.10907 1064.84 2.50103ZM1136.03 59.1423C1144.55 52.8135 1145.59 37.1733 1139.48 29.7464C1129.24 17.2818 1098.77 20.5105 1083.890 20.5712C1082.29 25.9024 1082.53 56.8636 1083.57 63.0364C1084.47 68.3664 1129.18 67.3879 1136.03 59.1423Z"/>
+        <path d="M49.0193 2.50056C55.6345 2.60758 63.6267 2.01665 70.0743 3.16141C72.2283 3.54388 73.4065 7.53654 74.0385 9.47749C88.7902 54.7507 104.197 99.833 118.793 145.15C119.38 146.971 119.165 147.562 118.381 149.166C116.054 150.117 99.3164 150.424 98.2261 148.66C90.6176 136.345 89.9802 118.967 82.49 106.533C81.29 104.541 71.351 105.138 69.1321 105.184C63.9467 105.209 37.9187 104.375 35.9618 105.896C31.5783 109.303 22.1669 142.81 19.2279 149.636C15.2922 149.948 2.99417 150.609 0.112644 148.353C-0.42675 145.807 1.10085 141.498 1.94626 138.999C17.0898 94.2475 30.8964 49.0134 46.1545 4.31824C46.1545 4.31824 48.7618 2.66394 49.0193 2.50056ZM60.3719 86.671C64.516 86.7234 74.3413 87.4718 77.2028 85.3236C77.3661 83.406 76.742 80.7341 76.1152 78.8742C71.4984 65.1859 66.6145 51.5888 62.6481 37.6917C61.6777 34.2916 61.3114 30.5984 59.8776 27.3883L57.8771 26.6221C56.004 30.6071 40.0786 82.5337 39.9206 85.5844C42.8579 87.4489 56.1578 86.7299 60.3719 86.671Z"/>
+        <path d="M842.309 2.50768C848.663 2.49143 861.245 1.22371 865.476 4.74295C866.811 7.11919 867.466 9.96479 868.306 12.5521C882.249 55.5561 896.193 98.5603 910.289 141.514C911.009 143.704 911.697 146.105 911.512 148.419C909.277 150.588 892.411 150.409 891.314 148.56C884.510 137.12 882.838 117.939 875.75 106.393C874.639 104.589 863.116 105.146 861.192 105.18C857.172 105.211 830.263 104.293 828.623 106.102C821.727 113.72 818.726 141.969 812.18 148.596C808.881 150.258 795.605 150.849 793.377 148.116C793.285 146.976 793.351 145.828 793.589 144.708C794.085 142.293 794.878 140.009 795.678 137.684C802.369 118.251 808.478 98.6219 814.904 79.0983C819.718 64.617 824.438 50.1048 829.06 35.5622C831.995 26.2881 834.805 16.6825 838.21 7.57276C839.466 4.22011 839.691 4.22005 842.309 2.50768ZM853.754 86.6728C857.483 86.7082 867.955 87.3426 870.428 85.4801C871.109 79 857.483 47.9527 856.392 38.9404C856.24 37.677 854.084 30.9308 853.483 29.5964C851.856 28.8524 851.466 28.8366 849.668 28.8087C847.393 37.5676 845.238 44.9851 842.627 53.5071C840.266 61.2118 833.727 78.6841 833.43 85.7245C836.048 87.3682 849.853 86.7259 853.754 86.6728Z"/>
+        <path d="M416.321 2.42598C421.638 2.78432 428.305 1.57179 433.194 3.44498C438.679 9.14117 432.03 49.0561 435.423 59.7077C435.952 61.367 436.71 62.3016 438.281 63.1175C444.433 63.8364 495.813 63.6667 500.676 62.6974C505.838 61.6685 501.147 14.1978 503.366 4.94285C506.284 0.658625 525.647 2.02418 525.696 4.75346C526.517 50.6844 525.283 96.912 526.283 142.903C526.449 150.535 521.394 150.001 515.861 149.813C512.362 149.881 507.251 150.378 504.321 148.872C499.763 143.267 506.611 88.0818 500.543 82.816C495.826 81.5794 441.932 82.0853 435.212 82.8082C433.997 94.132 436.669 142.224 434.438 148.457C431.848 150.923 417.326 150.22 414.056 148.578C413.047 144.374 413.312 124.639 413.308 119.016L413.332 23.0206C413.334 17.4297 413.264 11.6196 413.39 6.01291C413.428 4.33121 415.004 3.4904 416.321 2.42598Z"/>
+        <path d="M325.046 0.683308C332.497 -1.10161 343.026 0.964846 351.576 2.82736C364.364 5.61273 374.771 16.6448 382.08 27.0056C383.547 29.0852 387.774 41.8512 387.14 44.0011C384.294 46.3559 368.451 52.2178 366.358 47.5014C362.648 39.1404 360.159 31.4167 352.804 25.2813C339.285 14.0047 315.777 17.617 305.018 31.0268C292.881 45.6529 290.509 65.7703 291.668 84.0671C293.227 109.871 307.012 137.313 337.501 134.158C346.308 133.246 352.586 130.193 358.379 123.405C370.5 109.79 361.091 97.3511 382.487 106.638C385.72 108.042 386.577 107.48 387.885 110.91C387.569 116.521 379.724 129.807 376.006 134.433C357.708 157.607 315.969 158.57 294.049 140.212C251.25 104.367 260.692 7.18557 325.046 0.683308Z"/>
+        <path d="M1301.49 57.482C1308.41 47.1358 1315.16 36.6668 1321.7 26.0798C1326.19 18.9073 1330.83 10.9572 1336 4.32562C1337.97 1.79413 1354.7 1.5295 1357.29 4.08786C1357.4 5.77886 1317.62 67.9414 1313.38 72.9936C1318.52 84.3764 1361.11 144.72 1359.98 148.875C1358.02 150.134 1355.09 149.84 1352.7 149.816L1337.92 149.754C1334.54 146.1 1327.77 134.532 1324.94 129.899L1309.68 105.45C1307.73 102.3 1302.97 92.7111 1299.44 93.0191C1295.62 97.3694 1291.42 104.787 1288.15 109.778C1279.4 123.134 1271.53 137.5 1261.37 149.861C1255.95 149.887 1248.18 150.133 1242.99 149.476C1240.37 146.658 1251.05 132.674 1253.23 129.32L1278.83 90.0058C1281.43 86.0115 1286.07 80.4062 1287.16 75.7709C1288.79 68.8458 1245.02 10.6051 1245.18 4.08006L1247.43 2.48317C1252.86 2.65618 1259.2 1.55532 1264.5 2.78135C1270.91 4.26572 1295.99 48.6975 1301.49 57.482Z"/>
+        <path d="M925.608 2.46836C953.264 3.34515 981.224 2.54647 1008.92 2.54903C1015.03 2.54955 1029.9 1.28643 1034.93 2.93293C1035.51 3.12253 1035.89 3.6069 1036.15 4.14599C1037.72 7.39784 1037.62 15.9178 1036.49 19.2585C1034.59 24.8698 1000.6 19.0978 992.979 22.8268C990.05 26.3422 991.148 47.5978 991.154 53.2392L991.24 131.747C991.24 135.916 992.159 146.729 989.667 149.203C986.672 150.178 973.455 150.156 970.758 149.305C966.619 146.564 968.311 128.644 968.285 124.034C968.172 100.848 968.53 77.5234 968.397 54.412C968.358 47.3841 969.191 27.608 967.194 22.7164C963.796 19.9284 931.941 22.7903 925.68 21.4762C920.603 20.4116 921.601 9.21461 922.48 5.70913C922.983 3.70428 924.1 3.38965 925.608 2.46836Z"/>
+        <path d="M565.37 2.35103C570.171 2.5422 580.778 1.00245 584.005 4.59587C585.148 15.1339 584.778 146.071 583.85 148.195C583.266 149.531 582.196 149.644 580.928 150.131C576.989 150.171 565.402 150.84 562.817 148.66C561.841 144.176 561.402 9.4671 562.437 5.46192C562.922 3.58335 563.831 3.26125 565.37 2.35103Z"/>
+        <path d="M1197.24 2.45551C1201.36 2.46187 1213.87 1.35865 1216 3.83594C1217.850 5.98373 1217.1 26.533 1217.1 30.0564L1217.08 121.469C1217.08 126.826 1218.08 146.954 1215.34 150.066C1211.66 150.153 1207.99 150.207 1204.31 150.228C1201.32 150.224 1197.55 150.433 1195.43 148.332C1193.43 115.569 1195.89 41.5052 1195.24 4.90397C1196.01 3.96413 1196.67 3.14796 1197.24 2.45551Z"/>
+      </svg>
+    </div>
+
+    <div class="footer__bar footer__bar--bottom">
+      <p>archimatrix.com.my@copyright 2027</p>
+      <div class="footer__group">
+        <a href="#" class="u-hover">Terms &amp; Condition</a>
+        <a href="#" class="u-hover">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="assets/vendor/SplitText.min.js" defer></script>
+  <script src="assets/vendor/lenis.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
