@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 /*
- * Pulls every raster image used by the site straight from the Figma file
- * into assets/img/, using the Figma REST API.
+ * Re-exports the site's photos from the Figma file at 1.5–2× (retina) into
+ * assets/img/, using the Figma REST API. The committed images are 1× renders;
+ * run this to sharpen them. (contact-bg.webp and footer-texture.jpg are
+ * decorative layers and stay as committed.)
  *
  *   FIGMA_TOKEN=figd_xxx node scripts/fetch-figma-assets.mjs
  *
@@ -38,8 +40,6 @@ const ASSETS = {
   "expertise-3.jpg":      { id: "I418:93029;386:579", format: "jpg", scale: 2 },
   "expertise-4.jpg":      { id: "I418:93029;386:590", format: "jpg", scale: 2 },
   "contact-side.jpg":     { id: "379:92373", format: "jpg", scale: 1.5 },
-  "contact-bg.png":       { id: "379:92376", format: "png", scale: 1.5 },
-  "footer-texture.png":   { id: "357:92109", format: "png", scale: 0.5 },
 };
 // Hidden layer in Figma (render API skips hidden nodes) → pull its original image fill instead
 const IMAGE_FILLS = { "sketch-photo.jpg": "357:91777" };

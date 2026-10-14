@@ -490,7 +490,7 @@
   const initFooter = () => {
     const footer = $("[data-footer]");
     gsap.fromTo($$(":scope > *:not(.footer__texture)", footer), { yPercent: -18 }, { yPercent: 0, ease: "none", scrollTrigger: { trigger: footer, start: "top bottom", end: "bottom bottom", scrub: true } });
-    gsap.fromTo("[data-footer-texture]", { rotate: -6, scale: 1.1 }, { rotate: 0, scale: 1, ease: "none", scrollTrigger: { trigger: footer, start: "top bottom", end: "bottom bottom", scrub: true } });
+    gsap.fromTo("[data-footer-texture]", { scale: 1.2, yPercent: -6 }, { scale: 1, yPercent: 0, ease: "none", scrollTrigger: { trigger: footer, start: "top bottom", end: "bottom bottom", scrub: true } });
     const markSvg = $("[data-footer-mark] svg");
     markSvg.style.overflow = "hidden";
     const letters = $$("path", markSvg).sort((a, b) => a.getBBox().x - b.getBBox().x);

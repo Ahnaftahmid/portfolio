@@ -15,14 +15,15 @@ archimatrix/
 
 ## Images
 
-Pull every photo/render from Figma (Node 18+):
+All images in `assets/img/` are rendered straight from the Figma file at design size (1×),
+with the same crops as the design. To re-export the photos at 1.5–2× for extra sharpness on
+retina screens (Node 18+):
 
 ```bash
 FIGMA_TOKEN=figd_your_token node scripts/fetch-figma-assets.mjs
 ```
 
 Token: Figma → Settings → Security → Personal access tokens (File content: read-only).
-The script maps each file in `assets/img/` to its Figma node, so the crops match the design.
 
 ## Run locally
 

@@ -569,7 +569,7 @@ html:not(.js) .loader { display: none; }
 
 /* ---------- Footer ---------- */
 .footer { position: relative; overflow: hidden; background: var(--night); min-height: calc(856 * var(--px)); }
-.footer__texture { opacity: .3; position: absolute; left: calc(-1120 * var(--px)); top: calc(-1260 * var(--px)); width: calc(4238.627 * var(--px)); height: calc(4081 * var(--px)); pointer-events: none; mix-blend-mode: luminosity; }
+.footer__texture { opacity: .3; position: absolute; inset: 0; pointer-events: none; mix-blend-mode: luminosity; }
 .footer__texture img { width: 100%; height: 100%; object-fit: cover; }
 
 .footer__bar { position: relative; display: flex; align-items: center; justify-content: space-between; padding: 24px var(--gutter); gap: 16px 40px; flex-wrap: wrap; }
