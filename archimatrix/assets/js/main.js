@@ -521,6 +521,18 @@
   };
 
   const fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
-  Promise.race([fontsReady, new Promise((r) => setTimeout(r, 2500))]).then(boot);
+  // Failsafe: never leave visitors on the loader if anything goes wrong
+  const reveal = () => {
+    const l = document.querySelector("[data-loader]");
+    if (l) l.remove();
+    root.classList.remove("is-loading");
+    gsap.set("[data-split-lines], [data-split-chars], [data-fade], .hero__title, .hero__caption, .hero__pager, .header", { visibility: "visible" });
+    lenis && lenis.start();
+  };
+  const safeBoot = () => {
+    try { boot(); } catch (err) { console.error(err); reveal(); }
+  };
+  setTimeout(() => { if (document.querySelector("[data-loader]")) reveal(); }, 8000);
+  Promise.race([fontsReady, new Promise((r) => setTimeout(r, 2500))]).then(safeBoot);
   window.addEventListener("load", () => ScrollTrigger.refresh());
 })();

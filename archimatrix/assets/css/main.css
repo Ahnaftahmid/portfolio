@@ -132,6 +132,7 @@ a:hover .roll__in, a:focus-visible .roll__in { transform: translateY(-100%); }
 
 /* Pre-JS hidden states (revealed by main.js once split/animated) */
 .js [data-split-lines], .js [data-split-chars], .js [data-fade], .js .hero__title, .js .hero__caption, .js .hero__pager, .js .header { visibility: hidden; }
+.reveal-all [data-split-lines], .reveal-all [data-split-chars], .reveal-all [data-fade], .reveal-all .hero__title, .reveal-all .hero__caption, .reveal-all .hero__pager, .reveal-all .header { visibility: visible !important; }
 
 /* ---------- Preloader ---------- */
 .loader {

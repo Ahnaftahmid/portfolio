@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="is-loading">
 <head>
-  <script>document.documentElement.classList.add("js")</script>
+  <script>
+    document.documentElement.classList.add("js");
+    // Failsafe independent of GSAP: reveal the page if scripts fail to run
+    setTimeout(function () {
+      var l = document.querySelector("[data-loader]");
+      if (l) { l.remove(); document.documentElement.classList.remove("is-loading"); document.documentElement.classList.add("reveal-all"); }
+    }, 9000);
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Archimatrix — Architecture &amp; Interiors, Kuala Lumpur</title>
