@@ -22,6 +22,10 @@
   --sand: #ccba9a;
 
   --serif: "Libre Caslon Text", "Times New Roman", serif;
+  /* Libre Caslon Text only ships 400/700. Figma uses SemiBold/Medium, so we
+     render Regular with a hairline stroke instead of the much heavier Bold. */
+  --semi: .012em currentColor;
+  --medium: .006em currentColor;
   --sans: "Host Grotesk", "Helvetica Neue", Arial, sans-serif;
 
   --px: calc(100vw / 1440);
@@ -82,7 +86,8 @@ img.is-missing { opacity: 0 !important; }
 }
 .h-display {
   font-family: var(--serif);
-  font-weight: 500;
+  font-weight: 400;
+  -webkit-text-stroke: var(--medium);
   font-size: max(40px, calc(60 * var(--px)));
   line-height: 1.17;
   letter-spacing: -.04em;
@@ -245,7 +250,7 @@ html:not(.js) .loader { display: none; }
   position: absolute; left: var(--gutter);
   bottom: calc(80 * var(--px));
   width: calc(600 * var(--px));
-  font-family: var(--serif); font-weight: 600;
+  font-family: var(--serif); font-weight: 400; -webkit-text-stroke: var(--semi);
   font-size: calc(100 * var(--px));
   line-height: 1;
   letter-spacing: -.04em;
@@ -255,7 +260,7 @@ html:not(.js) .loader { display: none; }
   width: calc(234 * var(--px)); min-width: 220px;
   display: flex; flex-direction: column; gap: 2px;
 }
-.hero__name { font-family: var(--serif); font-weight: 600; font-size: 18px; line-height: 1.4; text-transform: uppercase; }
+.hero__name { font-family: var(--serif); font-weight: 400; -webkit-text-stroke: var(--semi); font-size: 18px; line-height: 1.4; text-transform: uppercase; }
 .hero__loc { font-size: 16px; color: var(--white-70); }
 .hero__caption p { overflow: hidden; }
 
@@ -306,7 +311,7 @@ html:not(.js) .loader { display: none; }
 
 .intro__title {
   position: absolute; left: var(--gutter); top: calc(727 * var(--px));
-  font-family: var(--serif); font-weight: 600;
+  font-family: var(--serif); font-weight: 400; -webkit-text-stroke: var(--semi);
   font-size: calc(120 * var(--px));
   line-height: calc(203 * var(--px));
   letter-spacing: -.04em;
@@ -353,7 +358,7 @@ html:not(.js) .loader { display: none; }
 .project__shade { position: absolute; inset: 0; background: #000; opacity: 0; pointer-events: none; }
 .project__info { position: absolute; left: var(--gutter); right: var(--gutter); bottom: calc(40 * var(--px) + 8px); display: flex; flex-direction: column; gap: 2px; }
 .project__no { font-size: 14px; color: var(--white-70); letter-spacing: .06em; margin-bottom: 10px; }
-.project__title { font-family: var(--serif); font-weight: 600; font-size: max(34px, calc(48 * var(--px))); line-height: 1.2; letter-spacing: -.04em; }
+.project__title { font-family: var(--serif); font-weight: 400; -webkit-text-stroke: var(--semi); font-size: max(34px, calc(48 * var(--px))); line-height: 1.2; letter-spacing: -.04em; }
 .project__loc { font-size: 16px; color: var(--white-70); }
 
 /* ---------- Sketch → Reality ---------- */
@@ -457,7 +462,7 @@ html:not(.js) .loader { display: none; }
 .cloudtree__overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.65) 100%); }
 .cloudtree__word {
   position: absolute;
-  font-family: var(--serif); font-weight: 600;
+  font-family: var(--serif); font-weight: 400; -webkit-text-stroke: var(--semi);
   font-size: max(44px, calc(100 * var(--px)));
   line-height: 1.25;
   letter-spacing: -.04em;
@@ -508,7 +513,7 @@ html:not(.js) .loader { display: none; }
 .acc__item.is-open .acc__no { font-weight: 600; }
 .acc__name { flex: 1; font-family: var(--serif); font-size: max(26px, calc(36 * var(--px))); transition: transform .6s var(--ease-out); }
 .acc__item:not(.is-open) .acc__head:hover .acc__name { transform: translateX(12px); }
-.acc__item.is-open .acc__name { font-weight: 500; }
+.acc__item.is-open .acc__name { -webkit-text-stroke: var(--medium); }
 .acc__icon { position: relative; width: 20px; height: 20px; }
 .acc__icon::before, .acc__icon::after { content: ""; position: absolute; left: 2px; right: 2px; top: 50%; height: 1.2px; margin-top: -.6px; background: currentColor; transition: transform .6s var(--ease-out); }
 .acc__icon::after { transform: rotate(90deg); }
@@ -580,7 +585,7 @@ html:not(.js) .loader { display: none; }
 
 .footer__main { position: relative; display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; padding: calc(84 * var(--px)) var(--gutter) 0; }
 .footer__cols { display: flex; gap: calc(121 * var(--px)); }
-.footer__nav { width: calc(328 * var(--px)); min-width: 220px; display: flex; flex-direction: column; gap: 8px; font-family: var(--serif); font-weight: 500; font-size: max(30px, calc(36 * var(--px))); line-height: 1.2; }
+.footer__nav { width: calc(328 * var(--px)); min-width: 220px; display: flex; flex-direction: column; gap: 8px; font-family: var(--serif); font-weight: 400; -webkit-text-stroke: var(--medium); font-size: max(30px, calc(36 * var(--px))); line-height: 1.2; }
 .footer__nav a { color: var(--white-50); width: fit-content; transition: color .4s, transform .6s var(--ease-out); }
 .footer__nav a:hover, .footer__nav a.is-current { color: var(--white); }
 .footer__nav a:hover { transform: translateX(10px); }
