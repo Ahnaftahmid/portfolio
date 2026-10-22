@@ -170,12 +170,15 @@ html:not(.js) .loader { display: none; }
   display: grid; place-items: center;
   transition: width .5s var(--ease-out), height .5s var(--ease-out), margin .5s var(--ease-out), background-color .4s, border-color .4s;
 }
-.cursor__label { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; opacity: 0; color: var(--ink); transition: opacity .3s; }
+.cursor__label { font-weight: 600; font-size: 14px; line-height: 1; letter-spacing: .02em; text-transform: uppercase; white-space: nowrap; color: var(--white); opacity: 0; transform: scale(.8); transition: opacity .4s var(--ease-out), transform .6s var(--ease-out); }
 .cursor.is-link .cursor__ring { width: 64px; height: 64px; margin: -32px 0 0 -32px; border-color: var(--white); }
 .cursor.has-label { mix-blend-mode: normal; }
 .cursor.has-label .cursor__dot { opacity: 0; }
-.cursor.has-label .cursor__ring { width: 96px; height: 96px; margin: -48px 0 0 -48px; background: var(--white); border-color: var(--white); }
-.cursor.has-label .cursor__label { opacity: 1; }
+/* "View project" hover: large outline-only circle with small caps label */
+.cursor.has-label .cursor__ring { --d: clamp(200px, 19vw, 280px); width: var(--d); height: var(--d); margin: calc(var(--d) / -2) 0 0 calc(var(--d) / -2); background: transparent; border-color: rgba(255, 255, 255, .55); }
+/* Over the sketch the reveal lens acts as the cursor */
+.cursor.is-off .cursor__ring { opacity: 0; }
+.cursor.has-label .cursor__label { opacity: 1; transform: scale(1); transition-delay: .1s; }
 
 /* ---------- Header ---------- */
 .header {

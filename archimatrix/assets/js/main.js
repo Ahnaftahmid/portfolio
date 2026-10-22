@@ -98,6 +98,7 @@
       const link = e.target.closest("a, button");
       cursor.classList.toggle("has-label", !!labelled && !link);
       cursor.classList.toggle("is-link", !!link);
+      cursor.classList.toggle("is-off", !link && !!e.target.closest("[data-cursor-hide]"));
       if (labelled && !link) cursorLabel.textContent = labelled.dataset.cursorText;
     });
     document.addEventListener("pointerleave", () => gsap.to(cursor, { autoAlpha: 0, duration: 0.3 }));
